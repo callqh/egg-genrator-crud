@@ -1,0 +1,35 @@
+{
+  "name": "egg-create-model",
+  "version": "1.0.0",
+  "description": "快速生成egg中的model，并且初始化完成一套RESTful API风格的CRUD接口",
+  "main": "lib/index.js",
+  "bin": {
+    "acrud": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "swc src -d lib",
+    "build:watch": "swc src -d lib --watch"
+  },
+  "author": "liuqh",
+  "license": "ISC",
+  "devDependencies": {
+    "@swc/cli": "^0.1.52",
+    "@swc/core": "^1.2.118",
+    "@types/node": "^16.11.12",
+    "@types/sade": "^1.7.3",
+    "chokidar": "^3.5.2"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "console-grid": "^1.0.17",
+    "fs-jetpack": "^4.3.0",
+    "sade": "^1.7.4"
+  },
+  "engines": {
+    "node": ">= 12.13"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ]
+}
