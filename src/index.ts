@@ -2,6 +2,7 @@
 import pkg from '../package.json';
 import sade from 'sade';
 import create from './create';
+
 const version = pkg.version; //版本号
 
 const cliName = Object.keys(pkg.bin)[0]; //包名称

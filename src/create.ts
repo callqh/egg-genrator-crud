@@ -4,6 +4,8 @@ import * as logger from './utils/logger';
 import modelTemplate from './template/model';
 import controllerTemplate from './template/controller';
 import loggerTable from './utils/table';
+import register_router from './router';
+
 const model_path = path.resolve(fs.cwd(), './app/model');
 const controller_path = path.resolve(fs.cwd(), './app/controller');
 
@@ -20,6 +22,8 @@ const init = (name: string) => {
   logger.primary(`🐬 请前往该文件，新增对应字段=>  ${filepath}`);
   // 创建controller文件
   createController(name);
+  // 注册路由
+  register_router(name);
 };
 
 const createController = (name: string) => {
