@@ -1,10 +1,10 @@
 {
-  "name": "egg-create-model",
+  "name": "egg-generator-crud",
   "version": "1.0.0",
   "description": "快速生成egg中的model，并且初始化完成一套RESTful API风格的CRUD接口",
   "main": "lib/index.js",
   "bin": {
-    "acrud": "./bin/index.js"
+    "gcrud": "./bin/index.js"
   },
   "scripts": {
     "build": "swc src -d lib",

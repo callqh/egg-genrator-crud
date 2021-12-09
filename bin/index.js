@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-process.title = 'acrud';
+process.title = 'gcrud';
 require('../lib/index');
